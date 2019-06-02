@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil", "Nancy.Serialization.Jil\Nancy.Serialization.Jil.csproj", "{A4DD5692-E14B-4F36-B911-ACD95ECF5155}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil.Tests", "Nancy.Serialization.Jil.Tests\Nancy.Serialization.Jil.Tests.csproj", "{4B2544EB-53D0-4612-BEB9-08A3D2E8AF0F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7CC888CF-B725-449D-B18A-A63677921AA6}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -21,11 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Nancy.Serialization.Jil.NuGet", "Nancy.Serialization.Jil.NuGet\Nancy.Serialization.Jil.NuGet.nuproj", "{BDFFE56C-0A30-4124-BF72-4107A3C17680}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil.Tests", "Nancy.Serialization.Jil.Tests\Nancy.Serialization.Jil.Tests.csproj", "{3A3C1A27-B45E-43EF-8ABC-580F951F2E0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil.Tests.netStandard", "Nancy.Serialization.Jil.Tests\Nancy.Serialization.Jil.Tests.netStandard.csproj", "{3A3C1A27-B45E-43EF-8ABC-580F951F2E0F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil.netStandard", "Nancy.Serialization.Jil\Nancy.Serialization.Jil.netStandard.csproj", "{05397F73-801D-4375-B7C2-9E0F2CDBE3F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Serialization.Jil", "Nancy.Serialization.Jil\Nancy.Serialization.Jil.csproj", "{05397F73-801D-4375-B7C2-9E0F2CDBE3F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,18 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A4DD5692-E14B-4F36-B911-ACD95ECF5155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4DD5692-E14B-4F36-B911-ACD95ECF5155}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4DD5692-E14B-4F36-B911-ACD95ECF5155}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4DD5692-E14B-4F36-B911-ACD95ECF5155}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B2544EB-53D0-4612-BEB9-08A3D2E8AF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B2544EB-53D0-4612-BEB9-08A3D2E8AF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B2544EB-53D0-4612-BEB9-08A3D2E8AF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B2544EB-53D0-4612-BEB9-08A3D2E8AF0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDFFE56C-0A30-4124-BF72-4107A3C17680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDFFE56C-0A30-4124-BF72-4107A3C17680}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDFFE56C-0A30-4124-BF72-4107A3C17680}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDFFE56C-0A30-4124-BF72-4107A3C17680}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A3C1A27-B45E-43EF-8ABC-580F951F2E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A3C1A27-B45E-43EF-8ABC-580F951F2E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A3C1A27-B45E-43EF-8ABC-580F951F2E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU

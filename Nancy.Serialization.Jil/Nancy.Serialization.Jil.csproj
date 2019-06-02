@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <IsTestProject>false</IsTestProject>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Nancy.Serialization.Jil</PackageId>
     <PackageVersion>1</PackageVersion>
     <Authors>Joerg Battermann</Authors>
     <PackageIconUrl>http://nancyfx.org/nancy-nuget.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/jbattermann/Nancy.Serialization.Jil/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicense>https://github.com/jbattermann/Nancy.Serialization.Jil/blob/master/LICENSE.md</PackageLicense>
     <PackageProjectUrl>https://github.com/jbattermann/Nancy.Serialization.Jil</PackageProjectUrl>
     <Summary>This is a Jil based Json (De-)Serializer for Nancy. Nancy is a lightweight web framework for the .Net platform, inspired by Sinatra.</Summary>
     <Description>Provides JSON (De-)Serialization support for Nancy using Jil.</Description>

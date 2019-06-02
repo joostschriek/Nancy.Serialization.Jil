@@ -9,6 +9,7 @@ using System.Threading;
 using Jil;
 using Nancy.Extensions;
 using Nancy.ModelBinding;
+using Nancy.Responses.Negotiation;
 
 namespace Nancy.Serialization.Jil
 {
@@ -27,29 +28,29 @@ namespace Nancy.Serialization.Jil
         /// The Jil De-Serialization <see cref="Options"/>.
         /// </value>
         public static volatile Options Options = Options.ISO8601IncludeInherited;
-        
+
         #region Implementation of IBodyDeserializer
 
         /// <summary>
         /// Whether the deserializer can deserialize the content type
         /// </summary>
-        /// <param name="contentType">Content type to deserialize</param><param name="context">Current <see cref="T:Nancy.ModelBinding.BindingContext"/>.</param>
+        /// <param name="mediaRange">Content type to deserialize</param><param name="context">Current <see cref="T:Nancy.ModelBinding.BindingContext"/>.</param>
         /// <returns>
         /// True if supported, false otherwise
         /// </returns>
-        public bool CanDeserialize(string contentType, BindingContext context)
+        public bool CanDeserialize(MediaRange mediaRange, BindingContext context)
         {
-            return Helpers.IsJsonType(contentType);
+            return Helpers.IsJsonType(mediaRange);
         }
 
         /// <summary>
         /// Deserialize the request body to a model
         /// </summary>
-        /// <param name="contentType">Content type to deserialize</param><param name="bodyStream">Request body stream</param><param name="context">Current <see cref="T:Nancy.ModelBinding.BindingContext"/>.</param>
+        /// <param name="mediaRange">Content type to deserialize</param><param name="bodyStream">Request body stream</param><param name="context">Current <see cref="T:Nancy.ModelBinding.BindingContext"/>.</param>
         /// <returns>
         /// Model instance
         /// </returns>
-        public object Deserialize(string contentType, Stream bodyStream, BindingContext context)
+        public object Deserialize(MediaRange mediaRange, Stream bodyStream, BindingContext context)
         {
             object deserializedObject;
             using (var inputStream = new StreamReader(bodyStream))
@@ -155,5 +156,15 @@ namespace Nancy.Serialization.Jil
 
             return defaultValue;
         }
+
+        //bool IBodyDeserializer.CanDeserialize(MediaRange mediaRange, BindingContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //object IBodyDeserializer.Deserialize(MediaRange mediaRange, Stream bodyStream, BindingContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

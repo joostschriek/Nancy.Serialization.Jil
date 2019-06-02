@@ -28,7 +28,6 @@ namespace Nancy.Serialization.Jil
         /// The Jil De-Serialization <see cref="Options"/>.
         /// </value>
         public static volatile Options Options = Options.ISO8601IncludeInherited;
-
         #region Implementation of IBodyDeserializer
 
         /// <summary>
@@ -156,15 +155,5 @@ namespace Nancy.Serialization.Jil
 
             return defaultValue;
         }
-
-        //bool IBodyDeserializer.CanDeserialize(MediaRange mediaRange, BindingContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //object IBodyDeserializer.Deserialize(MediaRange mediaRange, Stream bodyStream, BindingContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

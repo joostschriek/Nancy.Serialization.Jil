@@ -3,17 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7CC888CF-B725-449D-B18A-A63677921AA6}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBE9BBBE-7CD0-4ADC-83A6-CDF332CB301B}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.md = LICENSE.md
-		Nancy.Serialization.Jil.nuspec = Nancy.Serialization.Jil.nuspec
 		README.md = README.md
 	EndProjectSection
 EndProject

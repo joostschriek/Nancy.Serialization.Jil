@@ -68,3 +68,4 @@ packages/*
 #Test files
 *.testsettings
 *.Tmp
+/.vs
